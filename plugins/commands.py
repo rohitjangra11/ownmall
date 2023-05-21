@@ -516,7 +516,7 @@ async def settings(client, message):
             [
                 InlineKeyboardButton(
                     'Fɪʟᴇ Sᴇɴᴅ Mᴏᴅᴇ',
-                    settings["botpm"]',
+                    settings["botpm"],
                 ),
                 InlineKeyboardButton(
                     'Mᴀɴᴜᴀʟ Sᴛᴀʀᴛ" if settings["botpm"] else 'Aᴜᴛᴏ Sᴇɴᴅ',
