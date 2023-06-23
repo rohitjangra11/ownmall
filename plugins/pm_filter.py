@@ -185,6 +185,11 @@ async def next_page(bot, query):
                 InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
             ]
         )
+        btn.insert(1, 
+         [
+             InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')
+         ]
+    )
     try:
         if settings['max_btn']:
             if 0 < offset <= 10:
@@ -1616,6 +1621,11 @@ async def auto_filter(client, msg, spoll=False):
     btn.insert(0, [
         InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
     ])
+    btn.insert(1, 
+         [             
+             InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')      ]
+
+    )
 
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
