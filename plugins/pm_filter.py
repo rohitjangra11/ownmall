@@ -335,7 +335,7 @@ async def language_check(bot, query):
                 ]
                 for file in files
             ]
-
+            
         try:
             if settings['auto_delete']:
                 btn.insert(0, 
@@ -364,10 +364,6 @@ async def language_check(bot, query):
                 ]
             )
         
-        btn.insert(0, [
-            InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
-        ])
-
         if offset != "":
             key = f"{query.message.chat.id}-{query.message.id}"
             BUTTONS[key] = movie
@@ -1617,10 +1613,6 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton(f'ꜱᴇʀɪᴇꜱ', 'sinfo')
             ]
         )
-
-    btn.insert(0, [
-        InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
-    ])
     btn.insert(1, 
          [             
              InlineKeyboardButton('How To Watch', url='https://t.me/B4b7filedownload')      ]
